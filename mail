@@ -1,0 +1,7 @@
+def computer_declension(num):
+    if num % 10 == 1 and num % 100 != 11:
+        return str(num) + " компьютер"
+    elif 2 <= num % 10 <= 4 and (num % 100 < 10 or num % 100 >= 20):
+        return str(num) + " компьютера"
+    else:
+        return str(num) + " компьютеров"
